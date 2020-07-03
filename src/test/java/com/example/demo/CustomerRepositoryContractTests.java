@@ -4,11 +4,11 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CustomerRepositoryTest {
+public class CustomerRepositoryContractTests {
 
     private CustomerRepository repository;
 
-    public CustomerRepositoryTest(CustomerRepository repository) {
+    public CustomerRepositoryContractTests(CustomerRepository repository) {
         this.repository = repository;
     }
 

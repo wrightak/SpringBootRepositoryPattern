@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @SpringBootTest
-class MySQLCustomerRepositoryTest {
+class MySQLCustomerRepositoryContractTests {
 
     @Autowired
     private MySQLCustomerRepository mySQLCustomerRepository;
@@ -22,6 +22,6 @@ class MySQLCustomerRepositoryTest {
 
     @Test
     void createAndDelete() {
-        new CustomerRepositoryTest(mySQLCustomerRepository).createAndDelete();
+        new CustomerRepositoryContractTests(mySQLCustomerRepository).createAndDelete();
     }
 }

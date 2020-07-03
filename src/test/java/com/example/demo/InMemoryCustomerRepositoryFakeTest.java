@@ -13,6 +13,6 @@ public class InMemoryCustomerRepositoryFakeTest {
 
     @Test
     void createAndDelete() {
-        new CustomerRepositoryTest(inMemoryCustomerRepositoryFake).createAndDelete();
+        new CustomerRepositoryContractTests(inMemoryCustomerRepositoryFake).createAndDelete();
     }
 }
